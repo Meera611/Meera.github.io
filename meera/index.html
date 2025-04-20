@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+        <header class="header">
+          <a href="#home" class="logo">
+            <span>Meera</span>
+          </a>
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        <button class="gradient-btn">Contact Me</button>
+        </header>
+
+        <section class="home" id="home">
+          <div class="home-content">
+            <h1>Hi, Its <span>Meera arthi sri</span></h1>
+            <h3>
+              I'm a <span>Ui/Ux Designer</span>
+            </h3>
+            <p style="text-align: justify;">Focuses on designing the visual elements of a product, such as buttons, icons, typography, and layout, to ensure it’s aesthetically appealing and user-friendly. The UX (User Experience) side centers around understanding and improving how users interact with the product, ensuring that it is intuitive, efficient, and enjoyable. This involves conducting user research, testing prototypes, analyzing feedback, and iterating on designs to meet user needs and business goals.</p>
+            <div class="social-icons">
+                <a href="mailto:meeraarthisri4@gmail.com">
+                  <i class='bx bxl-gmail' ></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/meera-arthi-sri-49a8b0276">
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+              <a href="#contact" class="btn">Contact</a>
+            </div>
+          </div>
+          <div class="home-img">
+            <img src="image 1.jpg" alt="">
+          </div>
+        </section>
+
+
+        <section class="about" id="about">
+          <div class="about-img">
+            <img src="image 1.jpg" alt="">
+          </div>
+
+          <div class="about-content">
+            <h2>About <span> Me</span></h2>
+            <p style="text-align: justify;">HI! myself Meera Arthi Sri and I am a UI/UX and frontend developer with a passion for designing user-friendly and visually appealing websites and applications. Currently, I am pursuing my MSc (INFORMATION TECHNOLOGY)in coimbatore while improving my skills in design and development. I completed my undergraduate studies at SDNB Vaishnav College at Crompet with 74%. I completed my internship in UI UX domain for 31 days and i have redesign a coffee shop in figma  
+I enjoy creating smooth and engaging user experiences, ensuring that websites and apps look great and work efficiently. In addition to my studies and work, I have a personal interest in playing table tennis, which helps me stay confident, active and focused.  </p>
+          </div>
+
+
+        </section>
+
+        <section class="services" id="services">
+          <h2 class="heading">Services</h2>
+
+          <div class="services-container">
+            <div class="service-box">
+              <div class="service-info">
+                <i class='bx bxl-figma' ></i>
+                <h4>UI/UX Designer</h4>
+                <P> As a UI Designer I spcialize in creating layout, color schemes, typography, and interactive elements, ensuring an aesthetically pleasing and intuitive interface with using tools like Figma, Adobe XD, and Sketch to design interfaces, while also relying on user feedback and testing to enhance usability.</P>
+
+              </div>
+            </div>
+
+            <div class="service-box">
+              <div class="service-info">
+                <i class="bx bx-code"></i>
+                <h4>frontend Developer</h4>
+                <P>As a Frontend Developer, I specialize in creating responsive, user-friendly, and visually appealing web experiences. With expertise in HTML, CSS, JavaScript , I have a strong eye for design and usability, ensuring that every interface is both functional and aesthetically pleasing. My development process involves writing clean, maintainable code, optimizing website performance, and ensuring cross-browser compatibility. I also collaborate closely with UI/UX designers and backend developers to bring ideas to life..</P>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+
+          <h2 class="heading">Projects</h2>
+          <div class="projects-box">
+            
+            <div class="project-card">
+              <img src="projct 1.jpg" alt="">
+              <h3>Project 1</h3>
+              <p>This Coffee Shop Ordering App is a UI/UX design prototype created using Figma, aimed at providing a smooth and user-friendly experience for coffee lovers. The app is designed to simplify the process of ordering coffee, making it convenient, visually appealing, and efficientExplore a range of coffee options and customize your orders to your preference, adjusting the size, milk type, sweetness level, and more. Place orders easily with an intuitive interface and make secure payments using various methods.</p>
+              
+            </div>
+
+            <div class="project-card">
+              <img src="project 2.webp" alt="">
+              <h3>Project 2</h3>
+              <p>Employee attrition rate prediction using machine learning with Django involves building a web application that predicts employee turnover based on historical data like demographics, job performance, and satisfaction. Machine learning models, such as decision trees or logistic regression, are trained to predict which employees are likely to leave. Django is used to develop a user-friendly interface where HR professionals can input data, view predictions, and generate reports. This solution helps organizations proactively manage retention strategies and reduce attrition.</p>
+              
+            </div>
+          </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+          <h2 class="heading">Contact <span>Me</span></h2>
+
+          <form method="post" action="connect.php">  
+            <div class="input-group">
+              <div class="input-box">
+                  <input type="text" placeholder="Full Name" name="fullname">
+                  <span class="error">* <?php echo $fullnameErr;?></span>
+                  <input type="email" placeholder="Email" name="email">
+                  <span class="error">* <?php echo $emailErr;?></span>
+              </div>
+
+              <div class="input-box">
+                  <input type="number" placeholder="Phone Number" name = "phonenumber">
+                  <span class="error">* <?php echo $phonenumberErr;?></span>
+                  <input type="text"  placeholder="Subject" name="subject">
+                  <span class="error">* <?php echo $subjectErr;?></span>
+              </div>       
+            </div>
+
+
+              <div class="input-group-2">
+                <textarea id="" placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+              </div>
+          </form>
+        </section>
+        <footer class="footer">
+          <div class="social-icons">
+
+            <a href="mailto:meeraarthisri4@gmail.com">
+              <i class='bx bxl-gmail' ></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/meera-arthi-sri-49a8b0276">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a href="#">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+          </div>
+
+        <ul class="list">
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#services">Services</a>
+          </li>
+
+          <li>
+            <a href="about">About ME</a>
+          </li>
+
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <p class="copyright">
+          meera arthi sri Portfolio
+        </p>
+        </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
